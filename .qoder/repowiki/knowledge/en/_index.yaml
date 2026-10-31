@@ -1,0 +1,51 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: en-US
+branch: Q0DeR-MaG1C-BrAnCh-Fo2-NoN-GiT-Or-No-C0MmIt
+nodes_managed: true
+exported_at: "2026-08-06T06:36:51Z"
+modules:
+    "":
+        dir_name: Autonomous AI Cyber Defense Platform
+        title: Autonomous AI Cyber Defense Platform
+        scope:
+            - app.py
+            - requirements.txt
+        source_files: []
+        children:
+            - core
+            - ui
+        depends_on: []
+        related_to: []
+    core:
+        dir_name: Core Cyber Defense Services
+        title: Core Cyber Defense Services
+        scope:
+            - core/
+        source_files: []
+        children:
+            - core/incident_response
+        depends_on: []
+        related_to:
+            - path: ui
+    core/incident_response:
+        dir_name: Incident Management & Alerting Services
+        title: Incident Management & Alerting Services
+        scope:
+            - core/incident_manager.py
+            - core/alarm_service.py
+            - core/email_service.py
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    ui:
+        dir_name: Streamlit Cyber Defense Dashboard UI
+        title: Streamlit Cyber Defense Dashboard UI
+        scope:
+            - ui/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: core
